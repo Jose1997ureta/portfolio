@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ["portfolio-node-xrlb.vercel.app"],
+		domains: ["portfolio-node-mu.vercel.app"],
 	},
 };
 
