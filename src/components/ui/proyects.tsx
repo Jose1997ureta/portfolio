@@ -35,10 +35,10 @@ export const Proyects = () => {
 				data={DataTabs}
 			/>
 
-			{active === "web" ? (
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-4 mt-5">
-					{DataProyect.map((el) => (
-						<div className="relative group overflow-hidden" key={el.id}>
+			<div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-4 mt-5">
+				{DataProyect.filter((el) => el.area === active).map((el) => (
+					<div key={el.id}>
+						<div className="relative group overflow-hidden">
 							<Image
 								height={228}
 								width={228}
@@ -55,19 +55,37 @@ export const Proyects = () => {
 										size="sm"
 										icon={<IoCode className="w-5 h-5" />}
 									/>
-									<Button
-										text="Previsualizar"
-										onClick={() => handleOpenTab(el.urlPreview)}
-										size="sm"
-										type="outline"
-										icon={<IoEyeSharp className="w-5 h-5" />}
-									/>
+
+									{active === "web" ? (
+										<Button
+											text="Previsualizar"
+											onClick={() => handleOpenTab(el.urlPreview)}
+											size="sm"
+											type="outline"
+											icon={<IoEyeSharp className="w-5 h-5" />}
+										/>
+									) : null}
 								</div>
 							</div>
 						</div>
-					))}
-				</div>
-			) : null}
+
+						<p className="text-sm font-medium mt-2">{el.title}</p>
+
+						{el.tecnologies.length > 0 ? (
+							<div className="flex items-center flex-wrap gap-1 mt-2">
+								{el.tecnologies.map((t) => (
+									<div
+										key={t}
+										className="py-0.5 px-2 bg-slate-300 rounded-full"
+									>
+										<p className="text-xs">{t}</p>
+									</div>
+								))}
+							</div>
+						) : null}
+					</div>
+				))}
+			</div>
 		</section>
 	);
 };

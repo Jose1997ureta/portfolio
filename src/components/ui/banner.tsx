@@ -32,7 +32,7 @@ export const Banner = () => {
 					Jose Antonio
 				</h1>
 				<h2 className="text-text font-medium text-2xl md:text-[30px] xl:text-[40px] lg:w-[430px]  md:leading-[44px]">
-					FullStack Developer & Mobile Developer
+					FrontEnd Developer & Mobile Developer
 				</h2>
 			</div>
 
