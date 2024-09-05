@@ -33,10 +33,10 @@ export const Areas = () => {
 							</p>
 
 							<p className="text-sm text-white">
-								Como desarrollador front-end, construyo Utilice interfaces web
-								tecnológicamente escalables y optimizadas. Métodos avanzados y
-								flexibles para mejorar la experiencia del usuario usuarios y
-								garantizar el éxito del proyecto.
+								Como desarrollador front-end, creo interfaces web escalables y
+								optimizadas utilizando tecnologías avanzadas. Implemento métodos
+								flexibles para mejorar la experiencia del usuario y asegurar el
+								éxito de cada proyecto.
 							</p>
 						</div>
 					</div>
