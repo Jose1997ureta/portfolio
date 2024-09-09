@@ -55,53 +55,55 @@ export const Header = () => {
 	};
 
 	return (
-		<header className="w-full h-[60px] bg-white px-4 md:px-[40px] xl:px-[100px] py-4 shadow-sm flex items-center justify-between  fixed z-10 top-0">
-			<Link href={"/"}>
-				<p className="text-primary text-[32px] font-semibold">J.U</p>
-			</Link>
+		<header className="w-full h-[60px] bg-white fixed z-10 top-0 shadow-sm">
+			<div className="2xl:w-[80%] 3xl:w-[70%] mx-auto px-5 md:px-[40px] 2xl:px-[60px] flex items-center justify-between  h-full">
+				<Link href={"/"}>
+					<p className="text-primary text-[32px] font-semibold">J.U</p>
+				</Link>
 
-			<div className="block lg:hidden cursor-pointer" onClick={handleToogle}>
-				<RxHamburgerMenu className="h-7 w-7" />
-			</div>
-
-			<nav
-				className={twMerge(
-					show
-						? "fixed top-0 left-0 w-full z-10 bg-white h-full"
-						: "hidden lg:block"
-				)}
-			>
-				<div
-					className="lg:hidden flex justify-end p-5 cursor-pointer"
-					onClick={handleToogle}
-				>
-					<LiaTimesSolid className="h-8 w-8" />
+				<div className="block lg:hidden cursor-pointer" onClick={handleToogle}>
+					<RxHamburgerMenu className="h-7 w-7" />
 				</div>
-				<ul
+
+				<nav
 					className={twMerge(
 						show
-							? "flex flex-col p-10 items-center"
-							: "flex items-center gap-x-[35px]"
+							? "fixed top-0 left-0 w-full z-10 bg-white h-full"
+							: "hidden lg:block"
 					)}
 				>
-					{dataLinkHeader.map((el) => (
-						<li
-							key={el.id}
-							onClick={(e) => {
-								e.preventDefault();
-								handleNavigate(el.href);
-							}}
-							// href={el.href}
-							className={twMerge(
-								show ? "text-2xl w-full p-2 flex justify-center" : "",
-								"font-medium cursor-pointer"
-							)}
-						>
-							{el.name}
-						</li>
-					))}
-				</ul>
-			</nav>
+					<div
+						className="lg:hidden flex justify-end p-5 cursor-pointer"
+						onClick={handleToogle}
+					>
+						<LiaTimesSolid className="h-8 w-8" />
+					</div>
+					<ul
+						className={twMerge(
+							show
+								? "flex flex-col p-10 items-center"
+								: "flex items-center gap-x-[35px]"
+						)}
+					>
+						{dataLinkHeader.map((el) => (
+							<li
+								key={el.id}
+								onClick={(e) => {
+									e.preventDefault();
+									handleNavigate(el.href);
+								}}
+								// href={el.href}
+								className={twMerge(
+									show ? "text-2xl w-full p-2 flex justify-center" : "",
+									"font-medium cursor-pointer"
+								)}
+							>
+								{el.name}
+							</li>
+						))}
+					</ul>
+				</nav>
+			</div>
 		</header>
 	);
 };

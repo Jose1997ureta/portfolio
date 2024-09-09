@@ -20,6 +20,10 @@ const config: Config = {
 				third1: "#F3F3F3",
 				third2: "#F6F6F6",
 			},
+
+			screens: {
+				"3xl": "1920px",
+			},
 		},
 	},
 	plugins: [],
