@@ -8,7 +8,7 @@ export const Areas = () => {
 		<section className=" bg-third2" id="areas">
 			<div className="2xl:w-[80%] 3xl:w-[70%] mx-auto px-5 md:px-[40px] 2xl:px-[60px] lg:py-16 p-6">
 				<div className="flex justify-center mb-5">
-					<Title title="Areas" position="center" />
+					<Title title="Áreas" position="center" />
 				</div>
 
 				<div className="flex justify-center">

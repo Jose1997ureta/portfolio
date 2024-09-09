@@ -16,16 +16,15 @@ export const Contact = () => {
 
 				<div className="flex flex-col lg:flex-row justify-between items-start gap-x-4">
 					<div className="w-full mg:w-1/2">
-						<p className="text-xl font-medium mb-4">
+						{/* <p className="text-xl font-medium mb-4">
 							Desarrollador de Software: Listo para Unirme a tu Equipo
-						</p>
+						</p> */}
 
 						<p className="text-text">
-							Si su empresa busca desarrolladores con experiencia en el
-							desarrollo de soluciones personalizadas y capacidad para trabajar
-							en proyectos ágiles, me interesaría unirme a su equipo. Con mi
-							experiencia en desarrollo de software, puedo contribuir al éxito
-							de tu proyecto tecnológico.
+							Si su empresa busca un desarrollador con experiencia en el
+							desarrollo de software con capacidad para trabajar en proyectos
+							ágiles, me interesaría unirme a su equipo para contribuir al éxito
+							de sus proyectos tecnológicos.
 						</p>
 
 						<div className="lg:mt-[40px] mt-[20px]  space-y-3">

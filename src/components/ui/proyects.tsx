@@ -32,7 +32,7 @@ export const Proyects = () => {
 					conocimientos adquiridos a lo largo de mi carrera profesional. En esta
 					sección, encontrarás una variedad de trabajos que abarcan tanto el
 					desarrollo web como el móvil, utilizando diferentes lenguajes de
-					programación.
+					programación. (en desarrollo)
 				</p>
 
 				<Tabs
